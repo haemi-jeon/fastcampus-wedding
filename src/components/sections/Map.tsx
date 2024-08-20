@@ -1,16 +1,17 @@
-import classNames from 'classnames/bind'
-import Section from '@shared/Section'
-import styles from './Map.module.scss'
 import React, { useEffect, useRef } from 'react'
+import classNames from 'classnames/bind'
 import { Location } from '@models/wedding'
+import Section from '@shared/Section'
+
+import styles from './Map.module.scss'
+
+const cx = classNames.bind(styles)
 
 declare global {
   interface Window {
     kakao: any
   }
 }
-
-const cx = classNames.bind(styles)
 
 function Map({ location }: { location: Location }) {
   const mapContainer = useRef(null)
