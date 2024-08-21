@@ -1,8 +1,8 @@
+import React from 'react'
 import classNames from 'classnames/bind'
+import Dimmed from './Dimmed'
 
 import styles from './Modal.module.scss'
-import React from 'react'
-import Dimmed from './Dimmed'
 
 const cx = classNames.bind(styles)
 
@@ -20,10 +20,10 @@ function Modal({
   open,
   title,
   body,
-  rightButtonLabel,
-  onRightButtonClick,
-  leftButtonLabel,
+  leftButtonLabel = '닫기',
   onLeftButtonClick,
+  rightButtonLabel = '확인',
+  onRightButtonClick,
 }: ModalProps) {
   if (open === false) {
     return null

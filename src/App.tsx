@@ -9,11 +9,11 @@ import Intro from '@sections/Intro'
 import Invitation from '@sections/Invitation'
 import Calendar from '@sections/Calendar'
 import Map from '@sections/Map'
+import Contact from '@sections/Contact'
+import Share from '@sections/Share'
+import AttendCountModal from '@components/attendCountModal'
 
 import styles from './App.module.scss'
-import Contact from './components/sections/Contact'
-import Share from './components/sections/Share'
-import Modal from './components/shared/Modal'
 
 const cx = classNames.bind(styles)
 
@@ -84,6 +84,7 @@ function App() {
       <Map location={location} />
       <Contact groom={groom} bride={bride} />
       <Share groomName={groom.name} brideName={bride.name} date={date} />
+      <AttendCountModal wedding={wedding} />
     </div>
   )
 }
