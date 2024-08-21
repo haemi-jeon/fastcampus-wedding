@@ -13,6 +13,7 @@ import Map from '@sections/Map'
 import styles from './App.module.scss'
 import Contact from './components/sections/Contact'
 import Share from './components/sections/Share'
+import Modal from './components/shared/Modal'
 
 const cx = classNames.bind(styles)
 
