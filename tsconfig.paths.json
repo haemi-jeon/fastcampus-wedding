@@ -8,7 +8,8 @@
       "@shared/*": ["src/components/shared/*"],
       "@sections/*": ["src/components/sections/*"],
       "@models/*": ["src/models/*"],
-      "@contexts/*": ["src/contexts/*"]
+      "@contexts/*": ["src/contexts/*"],
+      "@api/*": ["src/api/*"]
     }
   }
 }
